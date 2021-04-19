@@ -5,19 +5,11 @@ public class AlgoArray {
         int[] array = new int[] {5, 3, 2, 1, 4};
         int temp = array[0];
         array[0] = array[3];
-        array[3] = temp;
-
-        for (int i = 0; i < array.length - 1; i++) {
-            int ind = i;
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[j] < array[ind]) {
-                    ind = j;
-                }
-            }
-            int min = array[ind];
-            array[ind] = array[i];
-            array[i] = min;
-        }
+        array[3] = array[4];
+        array[4] = temp;
+        temp = array[1];
+        array[1] = array[2];
+        array[2] = temp;
 
         for (int i : array) {
             System.out.println(i);
