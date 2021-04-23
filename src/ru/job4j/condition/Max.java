@@ -11,10 +11,10 @@ public class Max {
     }
 
     public static int max(int first, int second, int third, int fourth) {
-        return max(fourth, max(first, max(second, third)));
+        return max(fourth, max(first, second, third));
     }
 
     public static void main(String[] args) {
-        System.out.print(Max.max(4, 2));
+        System.out.println(Max.max(4, 2));
     }
 }
