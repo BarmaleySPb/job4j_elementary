@@ -17,6 +17,6 @@ public class Point {
     public static void main(String[] args) {
         Point pointA = new Point(1, 2);
         Point pointB = new Point(4, 2);
-        System.out.println(pointA.distance(pointB));
+        System.out.println("result (1, 2) to (4, 2) " + pointA.distance(pointB));
     }
 }
